@@ -1,0 +1,293 @@
+
+/*=========================================================layout section========================================================*/
+
+body {
+
+background-color: #fff;
+margin: 0px;
+font-family: Verdana, Georgia, serif;
+font-size: 14px;
+font-size:80%;
+height:100%;
+border:0px;
+width:100%;
+}
+ 
+#header {
+
+font-size: 80%;
+margin: 0px;
+border:0px;
+height: 10.5%;
+display:flex;
+justify-content: center;
+flex-wrap:nowrap;
+}
+
+#navbar {
+background-color:#5c755e;
+font-size: 90%;
+height:7.5%;
+margin:0px;
+text-align:center;
+}
+
+#navbar ul{  
+  margin: 0px;
+  text-align:center;
+  list-style-type:none;
+  padding:5px;
+  border-radius: 5px;
+  }
+
+
+.main {
+background-color:white;
+
+font-size: 110%;
+height:82%;
+ 
+}
+
+ /*========================================================footer section========================================================*/
+#footer{
+  background-color:#5c755e;
+  padding:1px;
+	height:7%;
+	clear:both;/*protects from left and right sidebars to overcome on the footer*/
+	color:#000;
+	text-align:center;
+	font-size:90%;
+}
+	
+#footer ul{  
+
+text-align:right;
+list-style-type:none;
+padding-right:20px;
+border-radius: 1px;
+
+}
+
+#footer ul li{  
+	display:inline;
+	text-align:center;
+}
+ 
+#footer ul li a {
+	text-decoration:none;
+	font-family:arial;
+	padding: .2em 1em;
+	color:#fff;
+	border-radius:5px;
+}
+
+#footer ul li a:hover {
+	color:#000;
+	font-weight:bold;
+	background-color:#fff;
+}
+
+/*=======================================================button section=========================================================*/
+
+.button {
+	text-decoration:none;
+	font-family:arial;
+	padding: .2em 1em;
+	color:rgb(0, 0, 0);
+	border-radius:5px;
+}
+
+.button:hover {
+	color:rgb(50, 29, 82);
+	font-weight:bold;
+	background-color:#fff;
+        }
+
+/*========================================================header section========================================================*/
+
+h1 {
+font-size: 120%;
+color: #ce282e;
+}
+ 
+h2 {
+font-size: 120%;
+color: darkblue;
+}
+
+h3{
+font-size:400%;
+text-align:center;
+color:#e5e4d7;
+font-family:"century gothic","gill sans",arial,serif;
+margin:0px;  /*as here this h3 is inheriting the margin fron header selector ,so here we overridded it by making it zero*/
+ 
+ /*the below code is used to align the text vertically*/
+ position:relative;
+ top:50%;
+ -webkit-transform:translateY(-50%);
+ -ms-transform: translateY(-50%);
+ transform: translateY(-50%);
+}
+/*we can also use comments like " // statements -->; "   */
+
+
+/*====================================================== R stylesheet ===============================================================*/
+/* The sidebar menu */
+
+.sidebar {
+  height: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 0;
+  position: fixed;/* Stay in place */
+  z-index: 1;/* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #f7f7f7;
+  overflow-x: hidden;/* Disable horizontal scroll */
+  padding-top: 50px;
+  transition: 0.2s;/* 0.2 second transition effect to slide in the sidebar */
+}
+
+#myInput {
+  height: 23px;
+  width: 90%;
+}
+
+#main1 {
+  position: relative;
+  text-align:center;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#data {
+  position: relative;
+  top: 50%;
+  text-align:center;
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 3px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  transition: 0.2s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #5b09b9;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 15px;
+  cursor: pointer;
+  background-color: rgb(31, 173, 38);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: rgb(10, 92, 35);
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main1 {
+  transition: margin-left .5s;
+  align-items: center;
+  /* If you want a transition effect */
+}
+
+
+/*==========================================================navbar details(contact,about)==========================================================*/
+/*
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+<!--body{
+  background: #00FFFF;
+  font-family: 'Times New Roman', sans-serif;
+}-->
+
+.wrapper{
+  margin-top: 10%;
+}
+
+.wrapper h1{
+  font-family: 'Allura', cursive;
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color: #008080;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: #ccc;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}*/
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.team .team_member .team_img img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
